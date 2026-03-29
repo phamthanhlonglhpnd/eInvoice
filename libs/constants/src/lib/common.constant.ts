@@ -1,0 +1,1 @@
+export const MICROSERVICE_NAME = 'microservice name'
