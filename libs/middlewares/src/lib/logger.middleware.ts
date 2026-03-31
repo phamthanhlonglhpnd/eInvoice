@@ -12,6 +12,7 @@ export class LoggerMiddleware implements NestMiddleware {
 
     const now = Date.now();
 
+    (req as any)[MetadataKeys.PROCESS_ID] = processId;
     (req as any)[MetadataKeys.START_TIME] = startTime;
 
     Logger.log(

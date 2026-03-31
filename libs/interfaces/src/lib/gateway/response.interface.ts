@@ -13,6 +13,9 @@ export class ResponseDto<T> {
   statusCode = HttpStatus.OK;
 
   @ApiProperty()
+  proccessID?: string;
+
+  @ApiProperty()
   duration?: string;
 
   constructor(data: Partial<ResponseDto<T>>) {
