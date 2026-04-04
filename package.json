@@ -8,7 +8,7 @@
     "nx:run-many": "nx run-many",
     "docker:start:provider": "docker compose -f docker-compose.provider.yaml up -d",
     "dev": "pnpm nx:reset && pnpm nx:run-many -t serve",
-    "dev-lite": "pnpm dev --projects=bff",
+    "dev-lite": "pnpm dev --projects=bff,invoice",
     "dev-local": "pnpm docker:start:provider && pnpm dev"
   },
   "private": true,
@@ -16,6 +16,7 @@
     "@nestjs/common": "^11.0.0",
     "@nestjs/config": "^4.0.3",
     "@nestjs/core": "^11.0.0",
+    "@nestjs/microservices": "^11.1.18",
     "@nestjs/platform-express": "^11.0.0",
     "@nestjs/swagger": "^11.2.6",
     "axios": "^1.6.0",
